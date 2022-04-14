@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 450px;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+      .face {
+        width: 366px;
+        height: 375px;
+        border-radius: 50%;
+        background: #000;
+        position: relative;
+      }
+      .ear-b {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #000;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        box-sizing: 1;
+      }
+      .ear-b::before {
+        content: '';
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #000;
+        position: absolute;
+        top: 5%;
+        left: 450%;
+      }
+      .ear-w {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+      }
+      .ear-w::after {
+        content: '';
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 5%;
+        left: 680%;
+      }
+      .eyes-w {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 25%;
+        left: 20%;
+      }
+      .eyes-w::before {
+        content: '';
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 3%;
+        left: 190%;
+      }
+      .eyes-b {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #000;
+        position: absolute;
+        left: 15%;
+        top: 15%;
+      }
+      .eyes-b::after {
+        content: '';
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #000;
+        position: absolute;
+        left: 285%;
+        top: 4%;
+      }
+      .mouse-w {
+        width: 165px;
+        height: 115px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 43%;
+        left: 28%;
+      }
+      .mouse-w::before {
+        content: '';
+        width: 35px;
+        height: 25px;
+        border-radius: 50%;
+        background: #000;
+        position: absolute;
+        left: 37%;
+        top: 10%;
+      }
+      .mouse-w::after {
+        content: '';
+        width: 100px;
+        height: 35px;
+        border-radius: 50%;
+        background: #000;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+      }
+      .face-r {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: red;
+        position: absolute;
+        top: 43%;
+        left: -6%;
+      }
+      .face-r::before {
+        content: '';
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: red;
+        position: absolute;
+        right: -350%;
+      }
+      .v-w {
+        width: 40px;
+        height: 40px;
+        border-color: transparent white white transparent;
+        border-width: 40px 40px 40px 40px;
+        border-style: solid solid solid solid;
+        position: absolute;
+        left: 34%;
+        top: 60%;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="face">
+        <div class="ear-b">
+          <div class="ear-w"></div>
+        </div>
+        <div class="eyes-w">
+          <div class="eyes-b"></div>
+        </div>
+        <div class="mouse-w"></div>
+        <div class="face-r"></div>
+        <div class="v-w"></div>
+      </div>
+    </div>
+  </body>
+</html>
